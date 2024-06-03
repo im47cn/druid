@@ -1556,7 +1556,7 @@ public abstract class DruidAbstractDataSource extends WrapperAdapter implements 
                 }
             }
 
-            if (valid && onFatalError) {
+            if (onFatalError) {
                 lock.lock();
                 try {
                     if (onFatalError) {
